@@ -14,3 +14,11 @@ function verify() {
     document.getElementById("addItemForm").classList.add("hidden");
     document.getElementById("prodList").classList.add("hidden");
 }
+
+function itemSubmit() {
+    // productname = document.getElementById("productname").value;
+    // price = document.getElementById("price").value;
+    // category = document.getElementById("category").value;
+    // file_input = document.getElementById("file_input").files[0].name;
+    // elecItems.push({"image":`${file_input}`},{"product":`${productname}`})
+}
