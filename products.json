@@ -2,159 +2,159 @@
     "productname":"Sony Television, Bravia (55 inches) 4K Ultra HD Smart LED Google TV (Black)",
     "seller": "JustShop 24/7",
     "image": "../image/tv.webp",
-    "rating":"4",
-    "price":"$1299",
+    "rating":4,
+    "price":1299,
     "category":"Electronics"
-}
+},
 {
     "productname":"Canon EOS 200D II 24.1MP Digital SLR Camera + EF-S 18-55mm f4 is STM Lens (Black)",
     "seller": "JustShop 24/7",
     "image": "../image/camera.jpg",
-    "rating":"4",
-    "price":"$799",
+    "rating":4,
+    "price":799,
     "category":"Electronics"
-}
+},
 {
     "productname":"Quaker Oats 2kg | Rolled Oats | 100% Natural Wholegrain | Nutritious Breakfast Cereals | Porridge | Easy to Cook",
     "seller": "Agarwal Sweets",
     "image": "../image/oats.jpg",
-    "rating":"4",
-    "price":"$4",
+    "rating":4,
+    "price":4,
     "category":"Grocery"
-}
+},
 {
     "productname":"NESCAFÉ Classic Black Roast Instant Coffee, Rich & Dark - 100g Dawn Jar | 100% Pure Soluble Coffee Powder",
     "seller": "Agarwal Sweets",
     "image": "../image/coffee.jpg",
-    "rating":"3",
-    "price":"$5",
+    "rating":3,
+    "price":5,
     "category":"Grocery"
-}
+},
 {
     "productname":"JBL Flip 4, Wireless Portable Bluetooth Speaker with Mic, IPX7 Waterproof & AUX (Black)",
     "seller": "Appario Retail Private Ltd",
     "image": "../image/speaker.jpg",
-    "rating":"3",
-    "price":"$99",
+    "rating":3,
+    "price":99,
     "category":"Electronics"
-}
+},
 {
     "productname":"JHDMI CABLE, AmazonBasics Flexible Premium HDMI Cable (4K@60Hz, 18Gbps), 3-Foot",
     "seller": "Appario Retail Private Ltd",
     "image": "../image/HDMI.jpg",
-    "rating":"5",
-    "price":"$5",
+    "rating":5,
+    "price":5,
     "category":"Electronics"
-}
+},
 {
     "productname":"Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport",
     "seller": "Appario Retail Private Ltd",
     "image": "../image/watch.webp",
-    "rating":"5",
-    "price":"$599",
+    "rating":5,
+    "price":599,
     "category":"Electronics"
-}
+},
 {
     "productname":"Borges Extra Virgin Olive Oil, 2L Material : vegetarian",
     "seller": "Sharmaji Kirana",
     "image": "../image/oil.jpg",
-    "rating":"4",
-    "price":"$13",
+    "rating":4,
+    "price":13,
     "category":"Grocery"
-}
+},
 {
     "productname":"Real Activ 100% Tender Coconut Water with No Added Sugars or Artifical Flavours - 200ml ( Pack of 6)",
     "seller": "Sharmaji Kirana",
     "image": "../image/juice.jpg",
-    "rating":"4",
-    "price":"$4.3",
+    "rating":4,
+    "price":4.3,
     "category":"Grocery"
-}
+},
 {
     "productname":"Happilo 100% Natural Premium Whole Cashews 500g Value Pack |Whole Crunchy Cashew | Gluten Free & Plant based Protein",
     "seller": "Sharmaji Kirana",
     "image": "../image/kaju.jpg",
-    "rating":"4",
-    "price":"$8",
+    "rating":4,
+    "price":8,
     "category":"Grocery"
-}
+},
 {
     "productname":"Memory: How To Develop, Train, And Use It",
     "seller": "Cocoblu Retail",
     "image": "../image/book1.jpg",
-    "rating":"5",
-    "price":"$4.5",
+    "rating":5,
+    "price":4.5,
     "category":"Books"
-}
+},
 {
     "productname":"Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
     "seller": "Cocoblu Retail",
     "image": "../image/book2.webp",
-    "rating":"4",
-    "price":"$6",
+    "rating":4,
+    "price":6,
     "category":"Books"
-}
+},
 {
     "productname":"Life's Amazing Secrets: How to Find Balance and Purpose in Your Life | Inspirational Zen book on motivation, self-development & healthy living",
     "seller": "Cocoblu Retail",
     "image": "../image/book3.webp",
-    "rating":"3",
-    "price":"$5.4",
+    "rating":3,
+    "price":5.4,
     "category":"Books"
-}
+},
 {
     "productname":"Grandma's Bag of Stories: Collection of 20+ Illustrated short stories, traditional Indian folk tales for all ages for children of all ages by Sudha Murty",
     "seller": "Cocoblu Retail",
     "image": "../image/book4.webp",
-    "rating":"4",
-    "price":"$6.9",
+    "rating":4,
+    "price":6.9,
     "category":"Books"
-}
+},
 {
     "productname":"Be Your Own Sunshine",
     "seller": "Cocoblu Retail",
     "image": "../image/book5.webp",
-    "rating":"5",
-    "price":"$3",
+    "rating":5,
+    "price":3,
     "category":"Books"
-}
+},
 {
     "productname":"Harpa Synthetic Body Dress Female",
     "seller": "Harpa Clothing Emporium",
     "image": "../image/dress.jpg",
-    "rating":"3",
-    "price":"$15",
+    "rating":3,
+    "price":15,
     "category":"Fashion"
-}
+},
 {
     "productname":"Women's Full Crushed/Pleated Satin Saree With Unstitched Blouse Piece",
     "seller": "Harpa Clothing Emporium",
     "image": "../image/saree.jpg",
-    "rating":"3",
-    "price":"$19",
+    "rating":3,
+    "price":19,
     "category":"Fashion"
-}
+},
 {
     "productname":"Nike Air Zoom Pegasus 37 Mens TECH Running",
     "seller": "Harpa Clothing Emporium",
     "image": "../image/shoe.jpg",
-    "rating":"5",
-    "price":"$102",
+    "rating":5,
+    "price":102,
     "category":"Fashion"
-}
+},
 {
     "productname":"Wrangler Men's Solid Loose Shirt (Light Olive Medium)",
     "seller": "Nyra's Collection",
     "image": "../image/shirt.jpg",
-    "rating":"3",
-    "price":"$11",
+    "rating":3,
+    "price":11,
     "category":"Fashion"
-}
+},
 {
     "productname":"KRAFT INDIA Men Cotton Striped Kurta Pyjama Set",
     "seller": "Nyra's Collection",
     "image": "../image/kurta.jpg",
-    "rating":"4",
-    "price":"$11",
+    "rating":4,
+    "price":11,
     "category":"Fashion"
 }
