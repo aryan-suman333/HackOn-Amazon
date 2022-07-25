@@ -1,0 +1,44 @@
+[
+    {
+      "name":"Agarwal Sweets",
+      "username":"agarwal",
+      "password":"seller1",
+      "certified": false
+    },
+    {
+      "name":"Appario Retail Private Ltd",
+      "username":"appario",
+      "password":"seller2",
+      "certified": false
+    },
+    {
+      "name":"Cocoblu Retail",
+      "username":"cocoblu",
+      "password":"seller3",
+      "certified": false
+    },
+    {
+      "name":"Harpa Clothing Emporium",
+      "username":"harpa",
+      "password":"seller4",
+      "certified": false
+    },
+    {
+      "name":"JustShop 24/7",
+      "username":"justshop",
+      "password":"seller5",
+      "certified": false
+    },
+    {
+      "name":"Nyra's Collection",
+      "username":"nyra",
+      "password":"seller6",
+      "certified": false
+    },
+    {
+      "name":"Shaemaji Kirana",
+      "username":"sharmaji",
+      "password":"seller7",
+      "certified": false
+    }
+]

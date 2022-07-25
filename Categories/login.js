@@ -1,42 +1,6 @@
-let sellers = [
-    {
-      "username":"agarwal",
-      "password":"seller1",
-      "certified": false
-    },
-    {
-      "username":"appario",
-      "password":"seller2",
-      "certified": false
-    },
-    {
-      "username":"cocoblu",
-      "password":"seller3",
-      "certified": false
-    },
-    {
-      "username":"harpa",
-      "password":"seller4",
-      "certified": false
-    },
-    {
-      "username":"justshop",
-      "password":"seller5",
-      "certified": false
-    },
-    {
-      "username":"nyra",
-      "password":"seller6",
-      "certified": false
-    },
-    {
-      "username":"sharmaji",
-      "password":"seller7",
-      "certified": false
-    },
-]
-
-function checkSeller() {
+async function checkSeller() {
+  let jso = await fetch('http://localhost:8000/sellers');
+    sellers = await jso.json();
     username = document.getElementById("username").value;
     password = document.getElementById("password").value;
     seller = sellers.find((obj) => obj.username == username && obj.password == password);

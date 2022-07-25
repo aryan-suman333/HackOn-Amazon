@@ -49,7 +49,7 @@ async function check(){
     jso = await sellers.json();
     jso.map(x => {
         if(x.username == user && x.certified){
-            document.getElementById("sellername").innerHTML += `<img src="../image/bluetick.png" class="w-9 h-9 ml-2" alt="">`;
+            document.getElementById("sellername").innerHTML += `<span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 ml-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900 max-h-5 mt-3">Certified</span>`;
         }
     });
 }
