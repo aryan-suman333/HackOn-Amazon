@@ -15,12 +15,12 @@ function verify() {
     document.getElementById("main").classList.add("hidden");
 }
 
-async function check(){
+async function check() {
     let products = await fetch('http://localhost:8000/products');
     let title = document.getElementById("sellername").innerHTML;
     jso = await products.json();
     jso.map(x => {
-        if(x.seller == title){
+        if (x.seller == title) {
             document.getElementById("prodList").innerHTML += `<li class="py-3 sm:py-4">
             <div class="flex items-center space-x-4">
                 <div class="flex-shrink-0">
@@ -48,7 +48,7 @@ async function check(){
     let user = document.getElementById("user").innerHTML;
     jso = await sellers.json();
     jso.map(x => {
-        if(x.username == user && x.certified){
+        if (x.username == user && x.certified) {
             document.getElementById("sellername").innerHTML += `<span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 ml-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900 max-h-5 mt-3">Certified</span>`;
         }
     });
