@@ -20,7 +20,7 @@ async function check() {
     let title = document.getElementById("sellername").innerHTML;
     jso = await products.json();
     jso.map(x => {
-        if (x.seller == title) {
+        if (x.seller === title) {
             document.getElementById("prodList").innerHTML += `<li class="py-3 sm:py-4">
             <div class="flex items-center space-x-4">
                 <div class="flex-shrink-0">

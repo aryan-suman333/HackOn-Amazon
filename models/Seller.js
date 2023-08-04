@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const sellerSchema = new Schema({
   username: String,
-  passeord: String,
+  password: String,
   certified: {
     type: Boolean,
     default: false

@@ -19,9 +19,9 @@ app.get("/", async (req, res) => {
 
 // rest apis
 app.get("/products", (req, res) => {
-    product.find((err, foundProducts) => {
+    product.find((err, found) => {
         if (!err) {
-            res.send(foundProducts)
+            res.send(found)
         } else {
             res.send(err);
         }
@@ -38,13 +38,14 @@ app.get("/sellers", (req, res) => {
 })
 
 // updating database for every seller
-app.post('/agarwal', async (req, res) => {
+let username = "";
+let updateDB = async (req, res) => {
 
     // brand licence request
     if (req.body.username) {
         let temp = new seller(req.body);
         await seller.findOneAndUpdate({ username: temp.username }, { certified: true });
-        res.sendFile(path.join(__dirname, 'Sellers/agarwal.html'));
+        res.sendFile(path.join(__dirname, `Sellers${username}.html`));
     }
 
     // add item request
@@ -58,140 +59,20 @@ app.post('/agarwal', async (req, res) => {
         // adding new item
         else {
             let temp = new product(req.body);
-            temp.save().then(() => {
-                res.sendFile(path.join(__dirname, 'Sellers/agarwal.html'));
-            }).catch((err) => {
-                res.send("These Details already belong to a user");
-            });
+            await temp.save();
+            res.sendFile(path.join(__dirname, `Sellers${username}.html`));
         }
     }
-})
-app.post('/appario', async (req, res) => {
-    if (req.body.username) {
-        let temp = new seller(req.body);
-        await seller.findOneAndUpdate({ username: temp.username }, { certified: true });
-        res.sendFile(path.join(__dirname, 'Sellers/appario.html'));
-    }
-    else {
-        let check = await product.findOne({ productname: req.body.productname, seller: req.body.seller });
-        if (check && check.price != req.body.price) {
-            res.sendFile(path.join(__dirname, 'warning.html'));
-        }
-        else {
-            let temp = new product(req.body);
-            temp.save().then(() => {
-                res.sendFile(path.join(__dirname, 'Sellers/appario.html'));
-            }).catch((err) => {
-                res.send("These Details already belong to a user");
-            });
-        }
-    }
-})
-app.post('/cocoblu', async (req, res) => {
-    if (req.body.username) {
-        let temp = new seller(req.body);
-        await seller.findOneAndUpdate({ username: temp.username }, { certified: true });
-        res.sendFile(path.join(__dirname, 'Sellers/cocoblu.html'));
-    }
-    else {
-        let check = await product.findOne({ productname: req.body.productname, seller: req.body.seller });
-        if (check && check.price != req.body.price) {
-            res.sendFile(path.join(__dirname, 'warning.html'));
-        }
-        else {
-            let temp = new product(req.body);
-            temp.save().then(() => {
-                res.sendFile(path.join(__dirname, 'Sellers/cocoblu.html'));
-            }).catch((err) => {
-                res.send("These Details already belong to a user");
-            });
-        }
-    }
-})
-app.post('/harpa', async (req, res) => {
-    if (req.body.username) {
-        let temp = new seller(req.body);
-        await seller.findOneAndUpdate({ username: temp.username }, { certified: true });
-        res.sendFile(path.join(__dirname, 'Sellers/harpa.html'));
-    }
-    else {
-        let check = await product.findOne({ productname: req.body.productname, seller: req.body.seller });
-        if (check && check.price != req.body.price) {
-            res.sendFile(path.join(__dirname, 'warning.html'));
-        }
-        else {
-            let temp = new product(req.body);
-            temp.save().then(() => {
-                res.sendFile(path.join(__dirname, 'Sellers/harpa.html'));
-            }).catch((err) => {
-                res.send("These Details already belong to a user");
-            });
-        }
-    }
-})
-app.post('/justshop', async (req, res) => {
-    if (req.body.username) {
-        let temp = new seller(req.body);
-        await seller.findOneAndUpdate({ username: temp.username }, { certified: true });
-        res.sendFile(path.join(__dirname, 'Sellers/justshop.html'));
-    }
-    else {
-        let check = await product.findOne({ productname: req.body.productname, seller: req.body.seller });
-        if (check && check.price != req.body.price) {
-            res.sendFile(path.join(__dirname, 'warning.html'));
-        }
-        else {
-            let temp = new product(req.body);
-            temp.save().then(() => {
-                res.sendFile(path.join(__dirname, 'Sellers/justshop.html'));
-            }).catch((err) => {
-                res.send("These Details already belong to a user");
-            });
-        }
-    }
-})
-app.post('/nyra', async (req, res) => {
-    if (req.body.username) {
-        let temp = new seller(req.body);
-        await seller.findOneAndUpdate({ username: temp.username }, { certified: true });
-        res.sendFile(path.join(__dirname, 'Sellers/nyra.html'));
-    }
-    else {
-        let check = await product.findOne({ productname: req.body.productname, seller: req.body.seller });
-        if (check && check.price != req.body.price) {
-            res.sendFile(path.join(__dirname, 'warning.html'));
-        }
-        else {
-            let temp = new product(req.body);
-            temp.save().then(() => {
-                res.sendFile(path.join(__dirname, 'Sellers/nyra.html'));
-            }).catch((err) => {
-                res.send("These Details already belong to a user");
-            });
-        }
-    }
-})
-app.post('/sharmaji', async (req, res) => {
-    if (req.body.username) {
-        let temp = new seller(req.body);
-        await seller.findOneAndUpdate({ username: temp.username }, { certified: true });
-        res.sendFile(path.join(__dirname, 'Sellers/sharmaji.html'));
-    }
-    else {
-        let check = await product.findOne({ productname: req.body.productname, seller: req.body.seller });
-        if (check && check.price != req.body.price) {
-            res.sendFile(path.join(__dirname, 'warning.html'));
-        }
-        else {
-            let temp = new product(req.body);
-            temp.save().then(() => {
-                res.sendFile(path.join(__dirname, 'Sellers/sharmaji.html'));
-            }).catch((err) => {
-                res.send("These Details already belong to a user");
-            });
-        }
-    }
-})
+};
+
+app.post(username = '/nyra', updateDB);
+app.post(username = '/cocoblu', updateDB);
+app.post(username = '/harpa', updateDB);
+app.post(username = '/appario', updateDB);
+app.post(username = '/justshop', updateDB);
+app.post(username = '/sharmaji', updateDB);
+app.post(username = '/agarwal', updateDB);
+
 app.listen(8000, () => {
     console.log("Connencted http://localhost:8000")
 })
